@@ -73,6 +73,7 @@ class Inventory:
             self.writeInventoryEntry(outFd, 'APIC_URL')
             self.writeInventoryEntry(outFd, 'APIC_USERNAME')
             self.writeInventoryEntry(outFd, 'APIC_PASSWORD')
+            self.writeInventoryEntry(outFd, 'APIC_CERT_DN')
             self.writeInventoryEntry(outFd, 'APIC_PHYS_DOMAIN')
             self.writeInventoryEntry(outFd, 'APIC_EPG_BRIDGE_DOMAIN')
             self.writeInventoryEntry(outFd, 'APIC_CONTRACTS_UNRESTRICTED_MODE')

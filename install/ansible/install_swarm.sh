@@ -10,6 +10,7 @@ set -euo pipefail
 ans_opts=""
 ans_user="root"
 ans_key=$src_conf_path/insecure_private_key
+apic_key=$src_conf_path/userabc.key
 install_scheduler=""
 netmaster=""
 v2plugin_param=""
@@ -141,6 +142,11 @@ fi
 # Copy the key to config folder
 if [[ -f $ans_key ]]; then
 	cp "$ans_key" "$host_ans_key"
+fi
+
+# Copy apic key to config folder
+if [[ -f $apic_key ]]; then
+	cp "$apic_key" "$host_apic_contiv_config"
 fi
 
 if [ "$ans_opts" == "" ]; then

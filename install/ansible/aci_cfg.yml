@@ -11,6 +11,7 @@ CONNECTION_INFO:
 APIC_URL: "https://contiv-aci-apic:443"
 APIC_USERNAME: "admin"
 APIC_PASSWORD: "password"
+APIC_CERT_DN: "uni/userext/user-admin/usercert"
 APIC_LEAF_NODES:
     - topology/pod-1/node-101
     - topology/pod-1/node-102
